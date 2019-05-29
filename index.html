@@ -1,1 +1,71 @@
-html	
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PHP PSR 规范 - 小讲</title>
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.css">
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="./lib/vue-m-dialog/css/default.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+
+
+        <div class="swiper-slide">
+            <h3>
+                PSR 是 PHP Standard Recommendations 的简写，由 PHP FIG 组织制定的 PHP 规范，是 PHP 开发的实践标准。
+            </h3>
+            <p>PHP FIG，FIG 是 Framework Interoperability Group（框架可互用性小组）的缩写，由几位开源框架的开发者成立于 2009 年，从那开始也选取了很多其他成员进来（包括但不限于 Laravel, Joomla, Drupal, Composer, Phalcon, Slim, Symfony, Zend Framework 等），虽然不是「官方」组织，但也代表了大部分的 PHP 社区。
+            </p>
+
+            <p>项目的目的在于：通过框架作者或者框架的代表之间讨论，以最低程度的限制，制定一个协作标准，各个框架遵循统一的编码规范，避免各家自行发展的风格阻碍了 PHP 的发展，解决这个程序设计师由来已久的困扰。
+            </p>
+            <p>
+            目前已表决通过了 13 套标准， 3套使用率极低，1套已经废弃，1套在审查，另外套还在起草中，已经得到大部分 PHP 框架的支持和认可。
+            </p>
+        </div>
+
+
+        <div class="swiper-slide">
+            <div class="content-1 content">
+                <div class="img" @click="show">
+                    img
+                </div>
+                <div class="img" @click="show">
+                    imgs
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="content">            
+                <img src="./images/psr-list.png" alt="">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="content">                        
+                <img src="./images/extra.png" alt="">
+            </div>
+        </div>
+    
+        <div class="swiper-slide">
+            <img src="./images/psr-list-en.png" alt="">
+        </div>
+
+        <div class="swiper-slide">
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+</body>
+<script src="./js/vue.js"></script>
+<script src="./lib/swiper/js/swiper.js"></script>
+<script src="./lib/vue-m-dialog/index.js"></script>
+<script src="./js/index.js"></script>
+</html>
