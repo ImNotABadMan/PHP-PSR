@@ -46,6 +46,10 @@ body {
 }
 
 
+.index p {
+    font-size: 20px;
+    text-indent: 2rem;
+}
 
 /**
 mask-btn 按钮触发
@@ -77,3 +81,4 @@ mask-btn 按钮触发
 .mask-white {
     background-color: #fff;
 }
+
