@@ -26,6 +26,15 @@
                 </p>
                 <p>
                 目前已表决通过了 13 套标准， 3套使用率极低，1套已经废弃，1套在审查，另外套还在起草中，已经得到大部分 PHP 框架的支持和认可。
+                </p><br />
+                <p>
+                    PHP-FIG代表了社区的一个横截面，随着时间的推移，横截面已经增加，包括更广泛的人员和项目选择。
+                </p>
+                <p>
+                    该小组于2009年由php | tek的许多框架开发人员引导。从那时起，各种其他成员已经申请并被投票，将该组的规模从前5个增加到20个以上。
+                </p>
+                <p>
+                    最初，项目是严格的框架，但很快发现CMS，应用程序，软件包开发人员等都有很多要添加的内容。我们的想法是获得生态系统的横截面，而不仅仅是一组特定的开发人员。让实现者与创建包的人员以及使用框架开发系统的人员一起工作同样重要。
                 </p>
             </div>
         </div>
@@ -51,16 +60,16 @@
 
         <div class="swiper-slide">
             <div class="content-1 content">
-                <div class="img" @click="show">
+                <div class="img" @click="show($event)">
                     <img src="./images/psr-1-home.png" alt="" ref="imgSrc">
                 </div>
-                <div class="img" @click="show">
+                <div class="img" @click="show($event)">
                     <img src="./images/psr-3-home.png" alt="" ref="imgSrc">
                 </div>
-                <div class="img" @click="show">
+                <div class="img" @click="show($event)">
                     <img src="./images/psr-4-home.png" alt="" ref="imgSrc">
                 </div>
-                <div class="img" @click="show">
+                <div class="img" @click="show($event)">
                     <img src="./images/psr-7-home.png" alt="" ref="imgSrc">
                 </div>
             </div>
@@ -131,6 +140,13 @@
         </div>
 
         <div class="swiper-slide">
+            <h1>PSR-14: Event Dispatcher</h1>
+            <div class="content">
+                <img src="./images/psr-14.png" alt="">
+            </div>
+        </div>
+
+        <div class="swiper-slide">
             <h1>PSR-15: HTTP Server Request Handlers(本文档描述了HTTP服务器请求处理程序（“请求处理程序”）和HTTP服务器中间件组件（“中间件”）的常见接口，这些接口使用PSR-7或后续替换PSR 所描述的HTTP消息)</h1>
             <div class="content">
                 <img src="./images/psr-15.png" alt="">
@@ -162,6 +178,8 @@
             <div class="content">
                 <h1>PSR-5：PHPDoc
                 <a href="https://github.com/php-fig/fig-standards/blob/master/proposed/phpdoc.md">PSR-5：PHPDoc</a></h1>
+            </div>
+            <div class="content">
                 <h1>PSR-19: PHPDoc tags
                 <a href="https://github.com/php-fig/fig-standards/blob/master/proposed/phpdoc-tags.md">PSR-19: PHPDoc tags</a></h1>
             </div>
