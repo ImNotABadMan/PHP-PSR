@@ -35,6 +35,22 @@ body {
         overflow-y: auto;
     }
 }
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color:#000;
+    opacity: 1;
+    background: rgba(0,0,0,0.2);
+}
+.swiper-pagination-bullet-active {
+    color:#fff;
+    background: #007aff;
+}
+
+
 .content{
     display: flex;
     justify-content: center;
@@ -74,7 +90,7 @@ mask-btn 按钮触发
     padding: 20px 50px;
     border-radius: 10px;
     margin: -10px -25px;
-    width: 90%;
+    width: 85%;
     display: none;
 }
 
