@@ -37,14 +37,15 @@ let img = new Vue({
         show(event) {
             console.log(event);
             console.log(event.currentTarget);
-            let src = $(event.currentTarget).find('img').attr('src');
-            $('.mask-layer-img').attr('src', src);
+            // $('.mask-layer-img').attr('src', src);
             console.log(this.$refs);
             /**
              * mask-btn 按钮触发
              * mask-layer 最外层
              * mask-content 编辑层
              * */
+            vmImg.$data.imgSrc = $(event.currentTarget).find('img').attr('src');
+
             $('.mask-layer').fadeToggle();
             $('.mask-content').each(function (index,item) {
                 $(this).css("margin-left", -$(this).innerWidth()/2);
@@ -55,17 +56,31 @@ let img = new Vue({
 });
 
 
-$(function () {
-    $('.mask-layer').click(function (event) {
-        if (event.target !== this) {
-            return;
+let vmImg = new Vue({
+    el: ".mask-layer",
+    data: {
+        imgSrc: '',
+    },
+    methods: {
+        hideImg: function(event) {
+            // console.log(event);
+            // console.log(event.currentTarget);
+            // console.log(this);
+            // console.log(this.$el);
+            // if (event.currentTarget !== this.$el) {
+            //     return;
+            // }
+            $(event.currentTarget).fadeToggle();
+            $('.mask-content').fadeToggle();
         }
-        $(this).fadeToggle();
-        $('.mask-content').fadeToggle();
-    });
-
-    $('.mask-content').each(function (index,item) {
-        $(this).css("margin-left", -$(this).innerWidth() * 9.2);
-        $(this).css("margin-top", -$(this).innerHeight()/10);
-    })
+    }
 });
+
+
+
+// $(function () {
+//     $('.mask-content').each(function (index,item) {
+//         $(this).css("margin-left", -$(this).innerWidth() * 9.2);
+//         $(this).css("margin-top", -$(this).innerHeight()/10);
+//     })
+// });

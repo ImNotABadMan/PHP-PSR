@@ -192,9 +192,9 @@
     <div class="swiper-pagination"></div>
 </div>
 
-<div class="mask-layer inline-block">
+<div class="mask-layer inline-block" @click.self="hideImg($event)">
     <div class="mask-content mask-white mask-middle">
-        <img class="mask-layer-img" src="" alt="">
+        <img class="mask-layer-img" :src="imgSrc" alt="">
     </div>
 </div>
 
